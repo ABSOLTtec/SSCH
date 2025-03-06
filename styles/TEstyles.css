@@ -1,0 +1,138 @@
+/* Thank You & Error Pages Common Styles */
+.thank-you-section,
+.error-section {
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    padding: 4rem 0;
+    background: #f9fafb;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    text-align: center;
+}
+
+/* Thank You Page Specific */
+.thank-you-section h1 {
+    color: #2a5c82;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.thank-you-section p {
+    color: #4a5568;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+/* Error Page Specific */
+.error-section h1 {
+    color: #dc3545;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.error-section p {
+    color: #4a5568;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+/* Common Button Styles */
+.home-button,
+.retry-button,
+.contact-button {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    margin: 0.5rem;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+/* Thank You Button */
+.home-button {
+    background: #2a5c82;
+    color: white;
+    border: 2px solid transparent;
+}
+
+.home-button:hover {
+    background: #1a4462;
+    transform: translateY(-2px);
+}
+
+/* Error Page Buttons */
+.retry-button {
+    background: #2a5c82;
+    color: white;
+    border: 2px solid #2a5c82;
+}
+
+.contact-button {
+    background: white;
+    color: #2a5c82;
+    border: 2px solid #2a5c82;
+}
+
+.retry-button:hover,
+.contact-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+/* Icon Styles */
+.success-icon {
+    font-size: 4rem;
+    color: #28a745;
+    margin-bottom: 1.5rem;
+    animation: fadeIn 1s ease;
+}
+
+.error-icon {
+    font-size: 4rem;
+    color: #dc3545;
+    margin-bottom: 1.5rem;
+    animation: shake 0.5s ease;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(10px); }
+    50% { transform: translateX(-10px); }
+    75% { transform: translateX(10px); }
+    100% { transform: translateX(0); }
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .thank-you-section h1,
+    .error-section h1 {
+        font-size: 2rem;
+    }
+    
+    .thank-you-section p,
+    .error-section p {
+        font-size: 1rem;
+    }
+    
+    .home-button,
+    .retry-button,
+    .contact-button {
+        display: block;
+        width: 100%;
+        margin: 0.5rem 0;
+    }
+}
