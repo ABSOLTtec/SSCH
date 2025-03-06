@@ -1,0 +1,30 @@
+[
+    {
+        "title": "Improving Senior Nutrition",
+        "excerpt": "Discover our comprehensive approach to meal planning for elderly residents...",
+        "date": "2024-03-15",
+        "image": "./images/blog1.jpg",
+        "url": "blog/nutrition.html"
+    },
+    {
+        "title": "Daily Activities for Cognitive Health",
+        "excerpt": "Learn about our daily activities program designed to maintain mental acuity...",
+        "date": "2024-03-12",
+        "image": "./images/blog2.jpg",
+        "url": "blog/activities.html"
+    },
+    {
+        "title": "The Importance of Social Connections",
+        "excerpt": "How we foster meaningful relationships among our residents...",
+        "date": "2024-03-10",
+        "image": "./images/blog3.jpg",
+        "url": "blog/social-connections.html"
+    },
+    {
+        "title": "Safety Measures in Elder Care",
+        "excerpt": "Explore our state-of-the-art safety protocols...",
+        "date": "2024-03-08",
+        "image": "./images/blog4.jpg",
+        "url": "blog/safety-measures.html"
+    }
+]

@@ -57,3 +57,33 @@ document.addEventListener('DOMContentLoaded', function() {
     slideshow.addEventListener('mouseenter', () => clearInterval(autoSlideInterval));
     slideshow.addEventListener('mouseleave', resetAutoSlide);
 });
+// blog posts
+document.addEventListener('DOMContentLoaded', function() {
+    // Fetch blog posts
+    fetch('posts.json')
+        .then(response => response.json())
+        .then(posts => {
+            const container = document.getElementById('blogPostsContainer');
+            
+            // Sort posts by date (newest first)
+            const sortedPosts = posts.sort((a, b) => 
+                new Date(b.date) - new Date(a.date)).slice(0, 4);
+
+            // Generate HTML for each post
+            sortedPosts.forEach(post => {
+                const postHTML = `
+                    <article class="blog-post">
+                        <img src="${post.image}" alt="${post.title}" class="post-image">
+                        <div class="post-content">
+                            <div class="post-date">${new Date(post.date).toLocaleDateString()}</div>
+                            <h3 class="post-title">${post.title}</h3>
+                            <p class="post-excerpt">${post.excerpt}</p>
+                            <a href="${post.url}" class="read-more">Read More →</a>
+                        </div>
+                    </article>
+                `;
+                container.insertAdjacentHTML('beforeend', postHTML);
+            });
+        })
+        .catch(error => console.error('Error loading posts:', error));
+});
