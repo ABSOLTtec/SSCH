@@ -1,39 +1,59 @@
-document.addEventListener("DOMContentLoaded", function () {
+// Add to your JavaScript
+document.addEventListener('DOMContentLoaded', function() {
+    // Slideshow functionality
     let slideIndex = 0;
-    let slides = document.querySelectorAll(".slide");
-    let dots = document.querySelectorAll(".dot");
-    let prevButton = document.querySelector(".prev");
-    let nextButton = document.querySelector(".next");
+    const slides = document.querySelectorAll('.service-slide');
+    const dots = document.querySelectorAll('.dot');
+    let autoSlideInterval;
 
-    function showSlides(n) {
-        slides.forEach((slide, i) => {
-            slide.style.display = i === n ? "block" : "none";
-        });
-        dots.forEach((dot, i) => {
-            dot.classList.toggle("active", i === n);
-        });
+    function showSlide(index) {
+        // Reset all slides and dots
+        slides.forEach(slide => slide.classList.remove('active'));
+        dots.forEach(dot => dot.classList.remove('active'));
+        
+        // Handle wrap-around
+        if (index >= slides.length) slideIndex = 0;
+        if (index < 0) slideIndex = slides.length - 1;
+        
+        // Show new slide
+        slides[slideIndex].classList.add('active');
+        dots[slideIndex].classList.add('active');
     }
 
     function nextSlide() {
-        slideIndex = (slideIndex + 1) % slides.length;
-        showSlides(slideIndex);
+        slideIndex++;
+        showSlide(slideIndex);
+        resetAutoSlide();
     }
 
     function prevSlide() {
-        slideIndex = (slideIndex - 1 + slides.length) % slides.length;
-        showSlides(slideIndex);
+        slideIndex--;
+        showSlide(slideIndex);
+        resetAutoSlide();
     }
 
-    dots.forEach((dot, i) => {
-        dot.addEventListener("click", () => {
-            slideIndex = i;
-            showSlides(slideIndex);
+    function resetAutoSlide() {
+        clearInterval(autoSlideInterval);
+        autoSlideInterval = setInterval(nextSlide, 8000);
+    }
+
+    // Event Listeners
+    document.querySelector('.slide-next').addEventListener('click', nextSlide);
+    document.querySelector('.slide-prev').addEventListener('click', prevSlide);
+    
+    dots.forEach((dot, index) => {
+        dot.addEventListener('click', () => {
+            slideIndex = index;
+            showSlide(slideIndex);
+            resetAutoSlide();
         });
     });
 
-    prevButton.addEventListener("click", prevSlide);
-    nextButton.addEventListener("click", nextSlide);
+    // Auto-advance every 8 seconds
+    autoSlideInterval = setInterval(nextSlide, 8000);
 
-    showSlides(slideIndex);
-    setInterval(nextSlide, 8000); // Auto-change every 8 seconds
+    // Pause on hover
+    const slideshow = document.querySelector('.services-slideshow');
+    slideshow.addEventListener('mouseenter', () => clearInterval(autoSlideInterval));
+    slideshow.addEventListener('mouseleave', resetAutoSlide);
 });

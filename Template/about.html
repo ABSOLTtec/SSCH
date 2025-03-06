@@ -4,39 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Navbar</title>
+    <link rel="stylesheet" href="../styles/indxstyles.css">
     <link rel="stylesheet" href="../styles/styles.css">
     <script defer src="../js/script.js"></script>
+    <script defer src="../js/indxscript.js"></script>
 </head>
 <body>
-    <nav class="navbar">
-        <div class="container">
-            <!-- Logo Section -->
-            <div class="logo">
-                <a href="#">LOGO</a>
-            </div>
-            
-            <!-- Navigation Links -->
-            <ul class="nav-links">
-                <li><a href="../Template/index.html">Home</a></li>
-                <li><a href="../Template/about.html">About Us</a></li>
-                <li><a href="../Template/services.html">Services</a></li>
-                <li><a href="../Template/reviews.html">Reviews</a></li>
-                <li><a href="../Template/contact.html">Contact Us</a></li>
-                <li><a href="../Template/blog.html">Blog</a></li>
-            </ul>
-            
-            <!-- Mobile Menu Button -->
-            <div class="menu-container">
-                <button class="menu-button"></button>
-                <ul class="mobile-nav-links">
-                    <li><a href="../Template/index.html">Home</a></li>
-                    <li><a href="../Template/about.html">About Us</a></li>
-                    <li><a href="../Template/services.html">Services</a></li>
-                    <li><a href="../Template/reviews.html">Reviews</a></li>
-                    <li><a href="../Template/contact.html">Contact Us</a></li>
-                    <li><a href="../Template/blog.html">Blog</a></li>
-                </ul>
-            </div>
+    <!-- HTML (add to every page) -->
+<nav class="main-nav">
+    <div class="nav-container">
+        <a href="index.html" class="logo">SSCH Care</a>
+        <div class="nav-links">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="about.html" class="nav-link">About Us</a>
+            <a href="services.html" class="nav-link">Services</a>
+            <a href="reviews.html" class="nav-link">Reviews</a>
+            <a href="blog.html" class="nav-link">Blog</a>
+            <a href="contact.html" class="nav-link">Contact Us</a>
         </div>
-    </nav>
-   
+        <button class="mobile-menu-toggle">☰</button>
+    </div>
+</nav> 
+</body>
+</html>

@@ -1,85 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Navbar</title>
-    <link rel="stylesheet" href="../styles/indxstyles.css">
-    <link rel="stylesheet" href="../styles/styles.css">
-    <script defer src="../js/script.js"></script>
-    <script defer src="../js/indxscript.js"></script>
-</head>
-<body>
-    <nav class="navbar">
-        <div class="container">
-            <!-- Logo Section -->
-            <div class="logo">
-                <a imgsrc="#"><a href="../Template/index.html">LOGO</a></a>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Navbar</title>
+        <link rel="stylesheet" href="../styles/indxstyles.css">
+        <link rel="stylesheet" href="../styles/styles.css">
+        <script defer src="../js/script.js"></script>
+        <script defer src="../js/indxscript.js"></script>
+    </head>
+    <body>
+    <nav class="main-nav">
+        <div class="nav-container">
+            <a href="index.html" class="logo">SSCH Care</a>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About Us</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="reviews.html" class="nav-link">Reviews</a>
+                <a href="blog.html" class="nav-link">Blog</a>
+                <a href="contact.html" class="nav-link">Contact Us</a>
             </div>
-            
-            <!-- Navigation Links -->
-            <ul class="nav-links">
-                <li><a href="../Template/index.html">Home</a></li>
-                <li><a href="../Template/about.html">About Us</a></li>
-                <li><a href="../Template/services.html">Services</a></li>
-                <li><a href="../Template/reviews.html">Reviews</a></li>
-                <li><a href="../Template/contact.html">Contact Us</a></li>
-                <li><a href="../Template/blog.html">Blog</a></li>
-            </ul>
-            
-            <!-- Mobile Menu Button -->
-            <div class="menu-container">
-                <button class="menu-button">&#9776;</button>
-                <ul class="mobile-nav-links">
-                    <li><a href="../Template/index.html">Home</a></li>
-                    <li><a href="../Template/about.html">About Us</a></li>
-                    <li><a href="../Template/services.html">Services</a></li>
-                    <li><a href="../Template/reviews.html">Reviews</a></li>
-                    <li><a href="../Template/contact.html">Contact Us</a></li>
-                    <li><a href="../Template/blog.html">Blog</a></li>
-                </ul>
-            </div>
+            <button class="mobile-menu-toggle">☰</button>
         </div>
     </nav>
-    <section class="slideshow-container">
-        <div class="slide">
-            <img src="service1.jpg" alt="Home Nursing Service">
-            <div class="slide-content">
-                <h2>Home Nursing Service</h2>
-                <p>Experienced and expert nursing care right at the comfort of your home.</p>
-                <div class="slide-buttons">
-                    <a href="#" class="slide-button">Learn More</a>
-                    <button class="video-button">
-                        <img src="play-icon.png" alt="Play"> Watch Video
-                    </button>
+        <section class="services-slideshow">
+            <div class="slideshow-container">
+                <!-- Slide 1 -->
+                <div class="service-slide active" data-service="1">
+                    <img src="../images/service1.jpg" alt="Elderly nutrition planning" class="slide-image">
+                    <div class="slide-content">
+                        <h3>Personalized Meal Plans</h3>
+                        <p>Customized nutrition plans prepared by certified dietitians...</p>
+                        <a href="services.html#nutrition" class="view-more">View More</a>
+                    </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="service-slide active" data-service="1">
+                    <img src="../images/service2.jpg" alt="Elderly nutrition planning" class="slide-image">
+                    <div class="slide-content">
+                        <h3>Personalized Meal Plans</h3>
+                        <p>Customized nutrition plans prepared by certified dietitians...</p>
+                        <a href="services.html#nutrition" class="view-more">View More</a>
+                    </div>
+                </div>
+                <!-- Slide 3 -->
+                <div class="service-slide active" data-service="1">
+                    <img src="../images/service3.jpg" alt="Elderly nutrition planning" class="slide-image">
+                    <div class="slide-content">
+                        <h3>Personalized Meal Plans</h3>
+                        <p>Customized nutrition plans prepared by certified dietitians...</p>
+                        <a href="services.html#nutrition" class="view-more">View More</a>
+                    </div>
+                <!-- Slide 4 -->
+                </div>
+                <div class="service-slide active" data-service="1">
+                    <img src="../images/service4.jpg" alt="Elderly nutrition planning" class="slide-image">
+                    <div class="slide-content">
+                        <h3>Personalized Meal Plans</h3>
+                        <p>Customized nutrition plans prepared by certified dietitians...</p>
+                        <a href="services.html#nutrition" class="view-more">View More</a>
+                    </div>
                 </div>
             </div>
-        </div>
-    
-        <div class="slide">
-            <img src="service2.jpg" alt="Medical Assistance">
-            <div class="slide-content">
-                <h2>Medical Assistance</h2>
-                <p>24/7 medical support for seniors with dedicated professionals.</p>
-                </div>
+
+            <!-- Navigation Controls -->
+            <button class="slide-prev" aria-label="Previous slide">❮</button>
+            <button class="slide-next" aria-label="Next slide">❯</button>
+            
+            <!-- Dots Navigation -->
+            <div class="slide-dots">
+                <span class="dot active" data-slide="1"></span>
+                <span class="dot" data-slide="2"></span>
+                <span class="dot" data-slide="3"></span>
+                <span class="dot" data-slide="4"></span>
             </div>
-        </div>
-    
-        <!-- Navigation Arrows -->
-        <span class="prev">&#10094;</span>
-        <span class="next">&#10095;</span>
-    
-        <!-- Slide Indicators -->
-        <div class="dots-container">
-            <span class="dot"></span>
-            <span class="dot"></span>
-        </div>
-    </section>
-    
-</body>
-</html>
-</body>
+        </section> 
+    </body>
 </html>
 
-
-    
