@@ -1,29 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Navbar</title>
-    <link rel="stylesheet" href="../styles/indxstyles.css">
-    <link rel="stylesheet" href="../styles/styles.css">
-    <script defer src="../js/script.js"></script>
-    <script defer src="../js/indxscript.js"></script>
-</head>
-<body>
-    <!-- HTML (add to every page) -->
-<nav class="main-nav">
-    <div class="nav-container">
-        <a href="index.html" class="logo">SSCH Care</a>
-        <div class="nav-links">
-            <a href="index.html" class="nav-link">Home</a>
-            <a href="about.html" class="nav-link">About Us</a>
-            <a href="services.html" class="nav-link">Services</a>
-            <a href="reviews.html" class="nav-link">Reviews</a>
-            <a href="blog.html" class="nav-link">Blog</a>
-            <a href="contact.html" class="nav-link">Contact Us</a>
-        </div>
-        <button class="mobile-menu-toggle">☰</button>
-    </div>
-</nav> 
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Navbar</title>
+        <link rel="stylesheet" href="../styles/abtstyles.css">
+        <link rel="stylesheet" href="../styles/styles.css">
+        <script defer src="../js/script.js"></script>
+        <script defer src="../js/indxscript.js"></script>
+    </head>
+    <body>
+        <nav class="main-nav">
+            <div class="nav-container">
+                <a href="index.html" class="logo">SSCH Care</a>
+                <div class="nav-links">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="about.html" class="nav-link">About Us</a>
+                    <a href="services.html" class="nav-link">Services</a>
+                    <a href="reviews.html" class="nav-link">Reviews</a>
+                    <a href="blog.html" class="nav-link">Blog</a>
+                    <a href="contact.html" class="nav-link">Contact Us</a>
+                </div>
+                <button class="mobile-menu-toggle">☰</button>
+            </div>
+        </nav> 
+        <section class="about-hero">
+            <div class="slogan-container">
+                <h1 class="main-slogan">Compassionate Care, Dignified Living</h1>
+                <div class="team-message">
+                    <h2>A Message From Our Team</h2>
+                    <p class="message-content">
+                        "At SSCH Care, we believe every senior deserves to live with dignity and joy. 
+                        Our dedicated team combines decades of experience with genuine compassion to 
+                        create a home where residents thrive. We're not just caregivers - we're family."
+                    </p>
+                    <p class="message-author">- The SSCH Care Team</p>
+                </div>
+            </div>
+        </section>
+            <!-- Leadership Section -->
+        <section class="leadership-section">
+            <div class="container">
+                <h2 class="section-title">Our Leadership</h2>
+                <div class="directors-grid">
+                    <!-- Director 1 -->
+                    <article class="director-card">
+                        <img src="../images/director1.jpg" alt="Dr. Sarah Johnson" class="director-photo">
+                        <h3 class="director-name">Dr. Sarah Johnson</h3>
+                        <p class="director-role">Medical Director</p>
+                        <a href="director1.html" class="view-profile">View Profile →</a>
+                    </article>
+
+                    <!-- Director 2 -->
+                    <article class="director-card">
+                        <img src="../images/director2.jpg" alt="Michael Chen" class="director-photo">
+                        <h3 class="director-name">Michael Chen</h3>
+                        <p class="director-role">Operations Director</p>
+                        <a href="director2.html" class="view-profile">View Profile →</a>
+                    </article>
+
+                    <!-- Director 3 -->
+                    <article class="director-card">
+                        <img src="../images/director3.jpg" alt="Emma Williams" class="director-photo">
+                        <h3 class="director-name">Emma Williams</h3>
+                        <p class="director-role">Care Services Director</p>
+                        <a href="director3.html" class="view-profile">View Profile →</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <!-- Physical Outlet Section -->
+        <section class="outlet-section">
+            <div class="container">
+                <h2 class="section-title">Our Physical Outlet</h2>
+                
+                <!-- Image Gallery -->
+                <div class="outlet-gallery">
+                    <img src="images/outlet1.jpg" alt="SSCH Care Facility - Front View" class="gallery-image">
+                    <img src="images/outlet2.jpg" alt="SSCH Care Facility - Lounge Area" class="gallery-image">
+                    <img src="images/outlet3.jpg" alt="SSCH Care Facility - Garden Area" class="gallery-image">
+                </div>
+
+                <!-- Map and Details -->
+                <div class="outlet-details">
+                    <!-- Google Maps Iframe -->
+                    <div class="map-container">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12345.678901234567!2d-122.12345678901234!3d37.123456789012345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzfCsDA3JzI0LjQiTiAxMjLCsDA3JzI0LjQiVw!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus" 
+                            width="100%" 
+                            height="400" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy"
+                            aria-label="SSCH Care Location on Google Maps">
+                        </iframe>
+                    </div>
+
+                    <!-- Visiting Hours and Details -->
+                    <div class="visiting-info">
+                        <h3>Visit Us</h3>
+                        <div class="info-item">
+                            <span class="info-icon">📍</span>
+                            <p>123 Care Street, Compassion City, CA 12345</p>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-icon">📞</span>
+                            <p>Phone: (123) 456-7890</p>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-icon">📧</span>
+                            <p>Email: info@sschcare.com</p>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-icon">⏰</span>
+                            <p>Visiting Hours: 9:00 AM - 7:00 PM (Mon-Sun)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
 </html>

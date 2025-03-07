@@ -1,0 +1,259 @@
+/* About Hero Section */
+.about-hero {
+    padding: 6rem 2rem 4rem;
+    background: linear-gradient(rgba(42,92,130,0.05), #ffffff);
+}
+
+.slogan-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.main-slogan {
+    font-size: 3.5rem;
+    color: #2a5c82;
+    margin-bottom: 3rem;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.team-message {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    background: rgba(42,92,130,0.95);
+    border-radius: 12px;
+    color: white;
+}
+
+.team-message h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.message-content {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    font-style: italic;
+}
+
+.message-author {
+    font-weight: 500;
+    color: #c5d9e8;
+}
+/* Leadership Section */
+.leadership-section {
+    padding: 4rem 1rem;
+    background: #f9fafb;
+    position: relative;
+    z-index: 1;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-title {
+    text-align: center;
+    color: #2a5c82;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+}
+
+.directors-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    padding: 0 1rem;
+}
+
+.director-card {
+    background: white;
+    border-radius: 10px;
+    padding: 2rem;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 400px; /* Consistent height */
+}
+
+.director-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+}
+
+.director-photo {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 1.5rem;
+    border: 4px solid #2a5c82;
+}
+
+.director-name {
+    color: #2a5c82;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.director-role {
+    color: #718096;
+    margin-bottom: 1.5rem;
+}
+
+.view-profile {
+    display: inline-block;
+    padding: 0.6rem 1.5rem;
+    background: #2a5c82;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.view-profile:hover {
+    background: #1a4462;
+    transform: translateY(-2px);
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .directors-grid {
+        grid-template-columns: 1fr; /* Single column layout */
+    }
+
+    .director-photo {
+        width: 140px;
+        height: 140px;
+    }
+}
+
+@media (max-width: 480px) {
+    .director-card {
+        padding: 1.5rem;
+    }
+}
+/* Outlet Section */
+.outlet-section {
+    padding: 4rem 1rem;
+    background: #ffffff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-title {
+    text-align: center;
+    color: #2a5c82;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+/* Image Gallery */
+.outlet-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+
+.gallery-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.gallery-image:hover {
+    transform: scale(1.03);
+}
+
+/* Map and Details */
+.outlet-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.map-container {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.visiting-info {
+    background: #f9fafb;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.visiting-info h3 {
+    color: #2a5c82;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.info-icon {
+    font-size: 1.2rem;
+    color: #2a5c82;
+}
+
+.info-item p {
+    color: #4a5568;
+    font-size: 1rem;
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .outlet-details {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-image {
+        height: 200px;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .visiting-info h3 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .outlet-gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-image {
+        height: 150px;
+    }
+}
