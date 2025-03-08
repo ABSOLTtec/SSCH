@@ -18,13 +18,16 @@ document.getElementById('quoteForm').addEventListener('submit', async (e) => {
     }
 
     try {
-        const response = await fetch(form.action, {
+        const response = await fetch('https://formspree.io/f/mdkenydp', {
             method: 'POST',
-            body: new FormData(form)
+            body: new FormData(form),
+            headers: {
+                'Accept': 'application/json'
+            }
         });
 
         if (response.ok) {
-            window.location.href = 'thank-you.html';
+            window.location.href = 'thankyou.html';
         } else {
             window.location.href = 'error.html';
         }
