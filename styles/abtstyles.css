@@ -257,3 +257,22 @@
         height: 150px;
     }
 }
+
+@media (max-width: 768px){
+    .main-slogan{
+        font-size: 2.4rem;
+        margin-bottom: 2rem;
+    }
+    .about-hero{
+        padding: 2.5rem 1rem 3rem;
+
+    }
+    .leadership-section {
+        padding: 1rem 1rem;
+    }
+    
+    .outlet-section {
+        padding: 2rem 1rem;
+    }
+
+}
