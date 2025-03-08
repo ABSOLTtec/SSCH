@@ -6,12 +6,10 @@ document.getElementById('quoteForm').addEventListener('submit', async (e) => {
     const buttonText = button.querySelector('.button-text');
     const spinner = button.querySelector('.loading-spinner');
 
-    // Show loading state
     buttonText.textContent = 'Submitting...';
     spinner.removeAttribute('hidden');
     button.disabled = true;
 
-    // Client-side validation
     if (!form.checkValidity()) {
         form.reportValidity();
         return;
@@ -34,7 +32,7 @@ document.getElementById('quoteForm').addEventListener('submit', async (e) => {
     } catch (error) {
         window.location.href = 'error.html';
     } finally {
-        // Reset button state
+        
         buttonText.textContent = 'Submit Request';
         spinner.setAttribute('hidden', true);
         button.disabled = false;
