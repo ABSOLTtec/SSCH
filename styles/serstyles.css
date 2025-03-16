@@ -45,7 +45,7 @@
     color: #2a5c82;
     font-size: 1.3rem;
     text-align: center;
-    margin: 1.5rem 0;
+    margin: 0.6rem 0;
 }
 
 .view-more {
@@ -56,11 +56,20 @@
     color: white;
     text-decoration: none;
     font-weight: 500;
+    left: 0;
     transition: background 0.3s ease;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin: 0.5rem; /* Center the button and add some margin */
+    width: 60%; /* Adjust width to make it look like a button */
+    border-width: 2px;
+    border-style: solid;
 }
 
 .view-more:hover {
-    background: #1a4462;
+    border-color: #1a4462;
+    color: #1a4462;
+    background: white;
 }
 
 /* Responsive Design */
