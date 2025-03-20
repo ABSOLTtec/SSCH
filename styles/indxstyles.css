@@ -90,7 +90,7 @@
 }
 
 .dot.active {
-    background: #2a5c82;
+    background: #fb368f;
     border-color: rgba(255,255,255,0.8);
     transform: scale(1.1);
 }
@@ -136,7 +136,7 @@
     padding: 2rem;
     max-width: 500px;  /* Smaller width */
     width: 90%;
-    background: rgba(42, 92, 130, 0.85);  /* More translucent */
+    background: rgba(251,54,143);  /* More translucent */
     backdrop-filter: blur(8px);  /* Enhanced glass effect */
     border-radius: 12px;
     text-align: center;
@@ -161,7 +161,7 @@
     display: inline-block;
     padding: 0.8rem 2rem;
     background: #ffffff;
-    color: #2a5c82;
+    color: #fb368f;
     text-decoration: none;
     border-radius: 25px;
     transition: all 0.3s ease;
@@ -170,7 +170,7 @@
 }
 
 .view-more:hover {
-    background: #2a5c82;
+    background: #fb368f;
     color: white;
     border-color: #fff;
     transform: translateY(-2px);
@@ -262,7 +262,7 @@
 }
 
 .team-heading {
-    color: #2a5c82;
+    color: #fb368f;
     font-size: 2.2rem;
     margin-bottom: 1.5rem;
 }
@@ -277,7 +277,7 @@
 .team-button {
     display: inline-block;
     padding: 0.8rem 2rem;
-    background: #2a5c82;
+    background: #fb368f;
     color: white;
     text-decoration: none;
     border-radius: 25px;
@@ -287,7 +287,7 @@
 }
 
 .team-button:hover {
-    background: #1a4462;
+    background: #fb368f;
     transform: translateY(-2px);
     border-color: rgba(255,255,255,0.3);
 }
@@ -343,7 +343,7 @@
 
 .section-heading {
     text-align: center;
-    color: #2a5c82;
+    color: #fb368f;
     font-size: 2.2rem;
     margin-bottom: 3rem;
 }
@@ -383,7 +383,7 @@
 }
 
 .post-title {
-    color: #2a5c82;
+    color: #fb368f;
     font-size: 1.2rem;
     margin-bottom: 1rem;
     line-height: 1.4;
@@ -398,14 +398,14 @@
 
 .read-more {
     display: inline-block;
-    color: #2a5c82;
+    color: #fb368f;
     text-decoration: none;
     font-weight: 500;
     transition: all 0.3s ease;
 }
 
 .read-more:hover {
-    color: #1a4462;
+    color: #fb368f;
     text-decoration: underline;
 }
 
@@ -430,7 +430,7 @@
 }
 /* Quote CTA Section */
 .quote-section {
-    background: #2a5c82;
+    background: #fb368f;
     padding: 4rem 0;
     text-align: center;
 }
@@ -451,7 +451,7 @@
     display: inline-block;
     padding: 1rem 2.5rem;
     background: white;
-    color: #2a5c82;
+    color: #fb368f;
     text-decoration: none;
     border-radius: 30px;
     font-weight: 600;

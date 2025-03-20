@@ -1,29 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Navbar</title>
-    <link rel="stylesheet" href="../styles/indxstyles.css">
-    <link rel="stylesheet" href="../styles/styles.css">
-    <script defer src="../js/script.js"></script>
-    <script defer src="../js/indxscript.js"></script>
-</head>
-<body>
-    <!-- HTML (add to every page) -->
-<nav class="main-nav">
-    <div class="nav-container">
-        <a href="index.html" class="logo">SSCH Care</a>
-        <div class="nav-links">
-            <a href="index.html" class="nav-link">Home</a>
-            <a href="about.html" class="nav-link">About Us</a>
-            <a href="services.html" class="nav-link">Services</a>
-            <a href="reviews.html" class="nav-link">Reviews</a>
-            <a href="blog.html" class="nav-link">Blog</a>
-            <a href="contact.html" class="nav-link">Contact Us</a>
-        </div>
-        <button class="mobile-menu-toggle">☰</button>
-    </div>
-</nav> 
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Navbar</title>
+        <link rel="stylesheet" href="../styles/revstyles.css">
+        <link rel="stylesheet" href="../styles/styles.css">
+        <script defer src="../js/script.js"></script>
+        <script defer src="../js/revscript.js"></script>
+    </head>
+    <body>
+        <nav class="main-nav">
+            <div class="nav-container">
+                <a href="index.html" class="logo"><img src="../images/finallogo.png" alt="SSCH Care Logo"></a>
+                <div class="nav-links">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="about.html" class="nav-link">About Us</a>
+                    <a href="services.html" class="nav-link">Services</a>
+                    <a href="reviews.html" class="nav-link">Reviews</a>
+                    <a href="blog.html" class="nav-link">Blog</a>
+                    <a href="contact.html" class="nav-link">Contact Us</a>
+                </div>
+                <button class="mobile-menu-toggle">☰</button>
+            </div>
+        </nav>  
+        <!-- Testimonials Section -->
+        <section class="testimonials-section">
+            <div class="container">
+                <h2 class="section-title">What Our Clients Say</h2>
+                
+                <div class="testimonials-grid">
+                    <!-- Left Side: Recent Reviews -->
+                    <div class="recent-reviews">
+                        <h3>Recent Reviews</h3>
+                        <ul class="reviews-list">
+                            <li class="review-item active" data-review="1">
+                                <div class="review-preview">
+                                    <img src="../images/director1.jpg" alt="Client Photo - John Doe" class="client-photo">
+                                    <div class="review-info">
+                                        <h4 class="client-name">John Doe</h4>
+                                        <p class="review-excerpt">"SSCH Care has been a blessing for my family..."</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="review-item" data-review="2">
+                                <div class="review-preview">
+                                    <img src="images/client2.jpg" alt="Client Photo - Jane Smith" class="client-photo">
+                                    <div class="review-info">
+                                        <h4 class="client-name">Jane Smith</h4>
+                                        <p class="review-excerpt">"The care my mother receives at SSCH is exceptional..."</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="review-item" data-review="3">
+                                <div class="review-preview">
+                                    <img src="images/client3.jpg" alt="Client Photo - Michael Brown" class="client-photo">
+                                    <div class="review-info">
+                                        <h4 class="client-name">Michael Brown</h4>
+                                        <p class="review-excerpt">"I couldn't be happier with the services at SSCH Care..."</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Updated Detailed Review Section -->
+                        <div class="detailed-review">
+                            <div class="review-content active" data-review="1">
+                                <div class="review-visual">
+                                    <img src="images/client1.jpg" alt="Client Photo - John Doe" class="client-photo-large">
+                                    <div class="author-details">
+                                        <h3 class="client-name">John Doe</h3>
+                                        <p class="client-role">Family Member</p>
+                                    </div>
+                                </div>
+                                <div class="review-text-wrapper">
+                                    <p class="review-text">
+                                        "SSCH Care has been a blessing for my family. The staff is incredibly compassionate, and the facility feels like home. Highly recommend!"
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="review-content" data-review="2">
+                            <div class="review-author">
+                                <img src="images/client2.jpg" alt="Client Photo - Jane Smith" class="client-photo-large">
+                                <div class="author-details">
+                                    <h3 class="client-name">Jane Smith</h3>
+                                    <p class="client-role">Daughter</p>
+                                </div>
+                            </div>
+                            <p class="review-text">
+                                "The care my mother receives at SSCH is exceptional. The team goes above and beyond to ensure her comfort and happiness."
+                            </p>
+                        </div>
+
+                        <div class="review-content" data-review="3">
+                            <div class="review-author">
+                                <img src="images/client3.jpg" alt="Client Photo - Michael Brown" class="client-photo-large">
+                                <div class="author-details">
+                                    <h3 class="client-name">Michael Brown</h3>
+                                    <p class="client-role">Son</p>
+                                </div>
+                            </div>
+                            <p class="review-text">
+                                "I couldn't be happier with the services at SSCH Care. The staff is professional, and the facility is clean and welcoming."
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
 </html>

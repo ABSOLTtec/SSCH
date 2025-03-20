@@ -14,7 +14,7 @@
 }
 
 .form-container h1 {
-    color: #2a5c82;
+    color: #fb368f;
     text-align: center;
     margin-bottom: 2rem;
 }
@@ -45,7 +45,7 @@
 .form-group select:focus,
 .form-group textarea:focus {
     outline: none;
-    border-color: #2a5c82;
+    border-color: #fb368f;
     box-shadow: 0 0 0 2px rgba(42,92,130,0.1);
 }
 
@@ -64,7 +64,7 @@ textarea {
     display: block;
     width: 100%;
     padding: 1rem;
-    background: #2a5c82;
+    background: #fb368f;
     color: white;
     border: none;
     border-radius: 5px;
@@ -74,7 +74,7 @@ textarea {
 }
 
 .submit-button:hover {
-    background: #1a4462;
+    background: #fb368f;
     transform: translateY(-2px);
 }
 

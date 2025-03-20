@@ -17,13 +17,30 @@
     align-items: center;
 }
 
+/* Logo Styling */
 .logo {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: #2a5c82;
-    text-decoration: none;
+    display: flex;
+    align-items: left;
+    height: 100%; /* Takes full height of nav container */
 }
 
+.logo img {
+    max-width: 300px; /* Maximum width for desktop */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 75px; /* Maximum height for better proportion */
+    transition: opacity 0.3s ease; /* Smooth hover effect */
+}
+
+.logo img:hover {
+    opacity: 0.9; /* Subtle hover effect */
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .logo img {
+        max-width: 120px; /* Slightly smaller on mobile */
+    }
+}
 .nav-links {
     display: flex;
     gap: 2rem;
@@ -39,7 +56,7 @@
 
 .nav-links a:hover,
 .nav-links a.active {
-    color: #2a5c82;
+    color: #fb368f;
 }
 
 .mobile-menu-toggle {
@@ -51,7 +68,7 @@
 }
 /* Add this to existing CSS */
 .nav-link.active {
-    color: #2a5c82;
+    color: #fb368f;
     position: relative;
 }
 
@@ -62,7 +79,7 @@
     left: 0;
     width: 100%;
     height: 2px;
-    background: #2a5c82;
+    background: #fb368f;
 }
 
 /* Mobile Responsive */
