@@ -11,7 +11,7 @@
 
 .section-title {
     text-align: center;
-    color: #2a5c82;
+    color: #fb3d94;
     font-size: 2.5rem;
     margin-bottom: 2rem;
 }
@@ -42,7 +42,7 @@
 }
 
 .service-name {
-    color: #2a5c82;
+    color: #fb3d94;
     font-size: 1.3rem;
     text-align: center;
     margin: 0.6rem 0;
@@ -52,7 +52,7 @@
     display: block;
     text-align: center;
     padding: 0.8rem;
-    background: #2a5c82;
+    background: #fb3d94;
     color: white;
     text-decoration: none;
     font-weight: 500;
@@ -67,8 +67,8 @@
 }
 
 .view-more:hover {
-    border-color: #1a4462;
-    color: #1a4462;
+    border-color: #fb3d94;
+    color: #fb3d94;
     background: white;
 }
 

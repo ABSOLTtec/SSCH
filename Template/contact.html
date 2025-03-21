@@ -4,10 +4,10 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Navbar</title>
-        <link rel="stylesheet" href="../styles/indxstyles.css">
+        <link rel="stylesheet" href="../styles/ctctyles.css">
         <link rel="stylesheet" href="../styles/styles.css">
         <script defer src="../js/script.js"></script>
-        <script defer src="../js/indxscript.js"></script>
+        <script defer src="../js/ctcscript.js"></script>
     </head>
     <body>
         <!-- HTML (add to every page) -->
@@ -24,6 +24,84 @@
                 </div>
                 <button class="mobile-menu-toggle">☰</button>
             </div>
-        </nav>  
+        </nav>
+        <section class="contact-section">
+            <div class="container">
+                <h2>Get in Touch</h2>
+                
+                <div class="contact-container">
+                    <!-- Contact Info -->
+                    <div class="contact-info">
+                        <div class="info-item">
+                            <h3>📍 Visit Us</h3>
+                            <p>123 Care Street<br>Compassion City, CA 12345</p>
+                        </div>
+                        <div class="info-item">
+                            <h3>📞 Call Us</h3>
+                            <p>+1 (234) 567-8900<br>Mon-Sun: 7 AM - 9 PM</p>
+                        </div>
+                        <div class="info-item">
+                            <h3>✉️ Email Us</h3>
+                            <p>contact@sschcare.com<br>Response within 24 hours</p>
+                        </div>
+                    </div>
+    
+                    <!-- Contact Form -->
+                    <form class="contact-form" id="questionForm">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="questionType">Question About *</label>
+                            <select id="questionType" name="questionType" required>
+                                <option value="">Select a Category</option>
+                                <option value="admissions">Admissions</option>
+                                <option value="services">Services</option>
+                                <option value="billing">Billing</option>
+                                <option value="general">General Inquiry</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="question">Your Question *</label>
+                            <textarea id="question" name="question" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Submit Question</button>
+                    </form>
+                </div>
+    
+                <!-- FAQ Section -->
+                <div class="faq-section">
+                    <h2>Frequently Asked Questions</h2>
+                    <div class="faq-container">
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                What are your visiting hours?
+                                <span class="toggle-icon">+</span>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Our standard visiting hours are 9 AM to 8 PM daily. Special arrangements can be made for critical situations.</p>
+                            </div>
+                        </div>
+    
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                What payment methods do you accept?
+                                <span class="toggle-icon">+</span>
+                            </button>
+                            <div class="faq-answer">
+                                <p>We accept all major credit cards, insurance payments, and Medicare/Medicaid. Payment plans are available.</p>
+                            </div>
+                        </div>
+    
+                        <!-- Add more FAQ items following the same structure -->
+                    </div>
+                </div>
+            </div>
+        </section> 
     </body>
 </html>

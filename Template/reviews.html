@@ -25,89 +25,66 @@
             </div>
         </nav>  
         <!-- Testimonials Section -->
-        <section class="testimonials-section">
-            <div class="container">
-                <h2 class="section-title">What Our Clients Say</h2>
-                
-                <div class="testimonials-grid">
-                    <!-- Left Side: Recent Reviews -->
-                    <div class="recent-reviews">
-                        <h3>Recent Reviews</h3>
-                        <ul class="reviews-list">
-                            <li class="review-item active" data-review="1">
-                                <div class="review-preview">
-                                    <img src="../images/director1.jpg" alt="Client Photo - John Doe" class="client-photo">
-                                    <div class="review-info">
-                                        <h4 class="client-name">John Doe</h4>
-                                        <p class="review-excerpt">"SSCH Care has been a blessing for my family..."</p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="review-item" data-review="2">
-                                <div class="review-preview">
-                                    <img src="images/client2.jpg" alt="Client Photo - Jane Smith" class="client-photo">
-                                    <div class="review-info">
-                                        <h4 class="client-name">Jane Smith</h4>
-                                        <p class="review-excerpt">"The care my mother receives at SSCH is exceptional..."</p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="review-item" data-review="3">
-                                <div class="review-preview">
-                                    <img src="images/client3.jpg" alt="Client Photo - Michael Brown" class="client-photo">
-                                    <div class="review-info">
-                                        <h4 class="client-name">Michael Brown</h4>
-                                        <p class="review-excerpt">"I couldn't be happier with the services at SSCH Care..."</p>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
+        <main class="reviews-page">
+            <div class="reviews-container">
+                <!-- Reviews List -->
+                <div class="reviews-list">
+                    <button class="back-button" onclick="showList()">← Back to List</button>
+                    <div class="review-item active" data-review="1" onclick="showReview(1)">
+                        <div class="review-meta">
+                            <img src="images/client1.jpg" alt="John Doe" class="review-photo">
+                            <div class="review-preview">
+                                <h3 class="review-name">John Doe</h3>
+                                <p class="review-date">March 15, 2024</p>
+                            </div>
+                        </div>
                     </div>
-                    <!-- Updated Detailed Review Section -->
-                        <div class="detailed-review">
-                            <div class="review-content active" data-review="1">
-                                <div class="review-visual">
-                                    <img src="images/client1.jpg" alt="Client Photo - John Doe" class="client-photo-large">
-                                    <div class="author-details">
-                                        <h3 class="client-name">John Doe</h3>
-                                        <p class="client-role">Family Member</p>
-                                    </div>
-                                </div>
-                                <div class="review-text-wrapper">
-                                    <p class="review-text">
-                                        "SSCH Care has been a blessing for my family. The staff is incredibly compassionate, and the facility feels like home. Highly recommend!"
-                                    </p>
-                                </div>
+    
+                    <div class="review-item" data-review="2" onclick="showReview(2)">
+                        <div class="review-meta">
+                            <img src="images/client2.jpg" alt="Jane Smith" class="review-photo">
+                            <div class="review-preview">
+                                <h3 class="review-name">Jane Smith</h3>
+                                <p class="review-date">March 12, 2024</p>
                             </div>
                         </div>
-                        <div class="review-content" data-review="2">
-                            <div class="review-author">
-                                <img src="images/client2.jpg" alt="Client Photo - Jane Smith" class="client-photo-large">
-                                <div class="author-details">
-                                    <h3 class="client-name">Jane Smith</h3>
-                                    <p class="client-role">Daughter</p>
-                                </div>
+                    </div>
+    
+                    <!-- Add more review items -->
+                </div>
+    
+                <!-- Detailed Review -->
+                <div class="review-detail">
+                    <div class="review-content" id="review-1">
+                        <div class="review-header">
+                            <img src="images/client1.jpg" alt="John Doe" class="detail-photo">
+                            <div class="review-meta-detail">
+                                <h2 class="review-title">John Doe</h2>
+                                <p class="review-stats">Family Member • ★★★★★ • March 15, 2024</p>
                             </div>
-                            <p class="review-text">
-                                "The care my mother receives at SSCH is exceptional. The team goes above and beyond to ensure her comfort and happiness."
-                            </p>
                         </div>
-
-                        <div class="review-content" data-review="3">
-                            <div class="review-author">
-                                <img src="images/client3.jpg" alt="Client Photo - Michael Brown" class="client-photo-large">
-                                <div class="author-details">
-                                    <h3 class="client-name">Michael Brown</h3>
-                                    <p class="client-role">Son</p>
-                                </div>
+                        <p class="review-content">
+                            "SSCH Care has been a blessing for my family. The staff's compassion and professionalism 
+                            have made all the difference in our experience. The facility maintains the perfect balance 
+                            between medical expertise and home-like comfort."
+                        </p>
+                    </div>
+    
+                    <div class="review-content" id="review-2" style="display: none;">
+                        <div class="review-header">
+                            <img src="images/client2.jpg" alt="Jane Smith" class="detail-photo">
+                            <div class="review-meta-detail">
+                                <h2 class="review-title">Jane Smith</h2>
+                                <p class="review-stats">Daughter • ★★★★★ • March 12, 2024</p>
                             </div>
-                            <p class="review-text">
-                                "I couldn't be happier with the services at SSCH Care. The staff is professional, and the facility is clean and welcoming."
-                            </p>
                         </div>
+                        <p class="review-content">
+                            "The care my mother receives at SSCH is exceptional. The team goes above and beyond to ensure 
+                            her comfort and happiness. We couldn't be more grateful for their support."
+                        </p>
                     </div>
                 </div>
             </div>
-        </section>
+        </main>
     </body>
 </html>

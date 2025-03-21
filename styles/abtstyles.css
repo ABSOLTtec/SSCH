@@ -1,6 +1,6 @@
 /* About Hero Section */
 .about-hero {
-    padding: 6rem 2rem 4rem;
+    padding: 10rem 10rem 10rem;
     background: linear-gradient(rgba(42,92,130,0.05), #ffffff);
 }
 
@@ -12,7 +12,7 @@
 
 .main-slogan {
     font-size: 3.5rem;
-    color: #2a5c82;
+    color: #fb3d94;
     margin-bottom: 3rem;
     line-height: 1.2;
     font-weight: 700;
@@ -24,7 +24,7 @@
     max-width: 800px;
     margin: 0 auto;
     padding: 2rem;
-    background: rgba(42,92,130,0.95);
+    background: rgba(251,61,148);
     border-radius: 12px;
     color: white;
 }
@@ -60,7 +60,7 @@
 
 .section-title {
     text-align: center;
-    color: #2a5c82;
+    color: #fb368f;
     font-size: 2.5rem;
     margin-bottom: 3rem;
 }
@@ -97,11 +97,11 @@
     border-radius: 50%;
     object-fit: cover;
     margin: 0 auto 1.5rem;
-    border: 4px solid #2a5c82;
+    border: 4px solid #fb368f;
 }
 
 .director-name {
-    color: #2a5c82;
+    color: #fb368f;
     font-size: 1.5rem;
     margin-bottom: 0.5rem;
 }
@@ -114,7 +114,7 @@
 .view-profile {
     display: inline-block;
     padding: 0.6rem 1.5rem;
-    background: #2a5c82;
+    background: #fb368f;
     color: white;
     text-decoration: none;
     border-radius: 20px;
@@ -122,7 +122,7 @@
 }
 
 .view-profile:hover {
-    background: #1a4462;
+    background: #fb368f;
     transform: translateY(-2px);
 }
 
@@ -160,7 +160,7 @@
 
 .section-title {
     text-align: center;
-    color: #2a5c82;
+    color: #fb368f;
     font-size: 2.5rem;
     margin-bottom: 2rem;
 }
@@ -206,7 +206,7 @@
 }
 
 .visiting-info h3 {
-    color: #2a5c82;
+    color: #fb368f;
     font-size: 1.8rem;
     margin-bottom: 1.5rem;
 }
@@ -220,7 +220,7 @@
 
 .info-icon {
     font-size: 1.2rem;
-    color: #2a5c82;
+    color: #fb368f;
 }
 
 .info-item p {
@@ -289,7 +289,7 @@
 
 .section-title {
     text-align: center;
-    color: #2a5c82;
+    color: #fb368f;
     font-size: 2.5rem;
     margin-bottom: 2rem;
 }
@@ -335,7 +335,7 @@
 }
 
 .visiting-info h3 {
-    color: #2a5c82;
+    color: #fb368f;
     font-size: 1.8rem;
     margin-bottom: 1.5rem;
 }
@@ -349,7 +349,7 @@
 
 .info-icon {
     font-size: 1.2rem;
-    color: #2a5c82;
+    color: #fb368f;
 }
 
 .info-item p {
@@ -398,7 +398,7 @@
 
 .section-title {
     text-align: center;
-    color: #2a5c82;
+    color: #fb368f;
     font-size: 2.5rem;
     margin-bottom: 2rem;
 }
@@ -434,7 +434,7 @@
     height: 60px;
     border-radius: 50%;
     object-fit: cover;
-    border: 2px solid #2a5c82;
+    border: 2px solid #fb368f;
 }
 
 .customer-details {
@@ -442,7 +442,7 @@
 }
 
 .customer-name {
-    color: #2a5c82;
+    color: #fb368f;
     font-size: 1.2rem;
     margin: 0;
 }
