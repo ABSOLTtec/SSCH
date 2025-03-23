@@ -295,6 +295,14 @@
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    .team-section{
+        padding: 20px 0px;
+        margin: 30px 0px ;
+    }
+    .section-heading{
+        margin:0px;
+        margin-bottom: 0rem;
+    }
     .team-container {
         flex-direction: column;
         padding: 0 1rem;
@@ -417,6 +425,10 @@
     
     .section-heading {
         font-size: 1.8rem;
+        margin-bottom: 0px;
+    }
+    .blog-section{
+        padding: 20px;
     }
 }
 

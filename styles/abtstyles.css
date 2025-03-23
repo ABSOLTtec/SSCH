@@ -70,6 +70,7 @@
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2rem;
     padding: 0 1rem;
+    justify-content: center;
 }
 
 .director-card {
@@ -84,13 +85,24 @@
     align-items: center;
     justify-content: space-between;
     min-height: 400px; /* Consistent height */
+
 }
 
 .director-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 6px 20px rgba(0,0,0,0.12);
 }
+@media (min-width: 769px) and (max-width: 995px) {
+    .directors-grid {
+        grid-template-columns: repeat(2,minmax(280px, 1fr)); /* Two columns for smaller screens */
+    }
 
+    .director-card:last-child:nth-child(odd) {
+        grid-column: 1 / -1; /* Span across all columns */
+        justify-self: center; /* Center the card horizontally */
+        width: 40%;
+    }
+}
 .director-photo {
     width: 180px;
     height: 180px;
@@ -309,7 +321,17 @@
     border-radius: 10px;
     transition: transform 0.3s ease;
 }
+@media (min-width: 664px) and (max-width: 995px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr); /* Two columns for smaller screens */
+    }
 
+    .gallery-image:last-child:nth-child(odd) {
+        grid-column: span 2; /* Span across both columns */
+        justify-self: center; /* Center the image horizontally */
+        max-width: 50%; /* Limit the width to 50% of the container */
+    }
+}
 .gallery-image:hover {
     transform: scale(1.03);
 }
@@ -416,6 +438,18 @@
     padding: 2rem;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
     transition: transform 0.3s ease;
+}
+
+@media (min-width: 769px) and (max-width: 995px) {
+    .reviews-grid {
+        grid-template-columns: repeat(2,minmax(280px, 1fr)); /* Two columns for smaller screens */
+    }
+
+    .review-card:last-child:nth-child(odd) {
+        grid-column: 1 / -1; /* Span across all columns */
+        justify-self: center; /* Center the card horizontally */
+        width: 40%;
+    }
 }
 
 .review-card:hover {
