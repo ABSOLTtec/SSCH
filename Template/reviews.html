@@ -4,15 +4,15 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Navbar</title>
-        <link rel="stylesheet" href="../styles/revstyles.css">
-        <link rel="stylesheet" href="../styles/styles.css">
-        <script defer src="../js/script.js"></script>
-        <script defer src="../js/revscript.js"></script>
+        <link rel="stylesheet" href="../static/styles/revstyles.css">
+        <link rel="stylesheet" href="../static/styles/styles.css">
+        <script defer src="../static/js/script.js"></script>
+        <script defer src="../static/js/revscript.js"></script>
     </head>
     <body>
         <nav class="main-nav">
             <div class="nav-container">
-                <a href="index.html" class="logo"><img src="../images/finallogo.png" alt="SSCH Care Logo"></a>
+                <a href="index.html" class="logo"><img src="../static/images/finallogo.png" alt="SSCH Care Logo"></a>
                 <div class="nav-links">
                     <a href="index.html" class="nav-link">Home</a>
                     <a href="about.html" class="nav-link">About Us</a>
@@ -33,7 +33,7 @@
                     <button class="back-button" onclick="showList()">← Back to List</button>
                     <div class="review-item active" data-review="1" onclick="showReview(1)">
                         <div class="review-meta">
-                            <img src="../images/def.jpg" alt="John Doe" class="review-photo">
+                            <img src="../static/images/def.jpg" alt="John Doe" class="review-photo">
                             <div class="review-preview">
                                 <h3 class="review-name">John Doe</h3>
                                 <p class="review-date">March 15, 2024</p>
@@ -43,7 +43,7 @@
     
                     <div class="review-item" data-review="2" onclick="showReview(2)">
                         <div class="review-meta">
-                            <img src="../images/def.jpg" alt="Jane Smith" class="review-photo">
+                            <img src="../static/images/def.jpg" alt="Jane Smith" class="review-photo">
                             <div class="review-preview">
                                 <h3 class="review-name">Jane Smith</h3>
                                 <p class="review-date">March 12, 2024</p>
@@ -58,7 +58,7 @@
                 <div class="review-detail">
                     <div class="review-content" id="review-1">
                         <div class="review-header">
-                            <img src="../images/def.jpg" alt="John Doe" class="detail-photo">
+                            <img src="../static/images/def.jpg" alt="John Doe" class="detail-photo">
                             <div class="review-meta-detail">
                                 <h2 class="review-title">John Doe</h2>
                                 <p class="review-stats">Family Member • ★★★★★ • March 15, 2024</p>
@@ -73,7 +73,7 @@
     
                     <div class="review-content" id="review-2" style="display: none;">
                         <div class="review-header">
-                            <img src="../images/def.jpg" alt="Jane Smith" class="detail-photo">
+                            <img src="../static/images/def.jpg" alt="Jane Smith" class="detail-photo">
                             <div class="review-meta-detail">
                                 <h2 class="review-title">Jane Smith</h2>
                                 <p class="review-stats">Daughter • ★★★★★ • March 12, 2024</p>
@@ -86,6 +86,7 @@
                     </div>
                 </div>
             </div>
+            <button>add review</button>
         </main>
     </body>
 </html>

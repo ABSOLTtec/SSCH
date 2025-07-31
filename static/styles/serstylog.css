@@ -1,0 +1,75 @@
+ body {
+      font-family: 'Times New Roman', Times, serif;
+      background: #f8f9fa;
+      margin: 0;
+      padding-top: 120px; /* to avoid overlap with fixed nav */
+    }
+
+    /* Container for the login box */
+    .login-wrapper {
+      max-width: 400px;
+      margin: 0 auto;
+      background: #fff;
+      padding: 3rem 2rem;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .login-wrapper h2 {
+      margin-bottom: 1.5rem;
+      color: #fb368f;
+      font-size: 2rem;
+    }
+
+    .login-wrapper input[type="text"],
+    .login-wrapper input[type="password"] {
+      width: 100%;
+      padding: 1rem;
+      margin: 0.75rem 0;
+      border: 1px solid #ccc;
+      border-radius: 12px;
+      font-size: 1rem;
+    }
+
+    .login-wrapper button {
+      width: 100%;
+      padding: 1rem;
+      background-color: #fb368f;
+      color: white;
+      border: none;
+      font-size: 1rem;
+      font-weight: bold;
+      border-radius: 30px;
+      margin-top: 1rem;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .login-wrapper button:hover {
+      background-color: #e02e7c;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+
+    .signup-link {
+      margin-top: 1.5rem;
+      font-size: 0.95rem;
+    }
+
+    .signup-link a {
+      color: #fb368f;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .signup-link a:hover {
+      text-decoration: underline;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 500px) {
+      .login-wrapper {
+        margin: 1rem;
+        padding: 2rem 1rem;
+      }
+    }
