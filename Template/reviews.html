@@ -20,73 +20,44 @@
                     <a href="reviews.html" class="nav-link">Reviews</a>
                     <a href="blog.html" class="nav-link">Blog</a>
                     <a href="contact.html" class="nav-link">Contact Us</a>
-                    <a href="login.html" class="nav-link">Log In</a>
                 </div>
                 <button class="mobile-menu-toggle">☰</button>
             </div>
         </nav>  
-        <!-- Testimonials Section -->
-        <main class="reviews-page">
-            <div class="reviews-container">
-                <!-- Reviews List -->
-                <div class="reviews-list">
-                    <button class="back-button" onclick="showList()">← Back to List</button>
-                    <div class="review-item active" data-review="1" onclick="showReview(1)">
-                        <div class="review-meta">
-                            <img src="../static/images/def.jpg" alt="John Doe" class="review-photo">
-                            <div class="review-preview">
-                                <h3 class="review-name">John Doe</h3>
-                                <p class="review-date">March 15, 2024</p>
-                            </div>
-                        </div>
+        <main>
+                <h2>Latest Testimonials & Reviews</h2>
+
+                <div class="testimonial-grid">
+
+                    <div class="testimonial-card">
+                    <img src="../static/images/blg1.jpg" alt="Review 1 Image" />
+                    <div class="testimonial-content">
+                        <div class="testimonial-title">Great Home Care</div>
+                        <div class="testimonial-date">August 1, 2025</div>
+                        <a class="view-button" href="#">View Details →</a>
                     </div>
-    
-                    <div class="review-item" data-review="2" onclick="showReview(2)">
-                        <div class="review-meta">
-                            <img src="../static/images/def.jpg" alt="Jane Smith" class="review-photo">
-                            <div class="review-preview">
-                                <h3 class="review-name">Jane Smith</h3>
-                                <p class="review-date">March 12, 2024</p>
-                            </div>
-                        </div>
                     </div>
-    
-                    <!-- Add more review items -->
+
+                    <div class="testimonial-card">
+                    <img src="https://via.placeholder.com/300x200" alt="Review 2 Image" />
+                    <div class="testimonial-content">
+                        <div class="testimonial-title">Truly Caring Staff</div>
+                        <div class="testimonial-date">July 27, 2025</div>
+                        <a class="view-button" href="#">View Details →</a>
+                    </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                    <img src="https://via.placeholder.com/300x200" alt="Review 3 Image" />
+                    <div class="testimonial-content">
+                        <div class="testimonial-title">Peace of Mind</div>
+                        <div class="testimonial-date">July 20, 2025</div>
+                        <a class="view-button" href="#">View Details →</a>
+                    </div>
+                    </div>
+
                 </div>
-    
-                <!-- Detailed Review -->
-                <div class="review-detail">
-                    <div class="review-content" id="review-1">
-                        <div class="review-header">
-                            <img src="../static/images/def.jpg" alt="John Doe" class="detail-photo">
-                            <div class="review-meta-detail">
-                                <h2 class="review-title">John Doe</h2>
-                                <p class="review-stats">Family Member • ★★★★★ • March 15, 2024</p>
-                            </div>
-                        </div>
-                        <p class="review-content">
-                            "SSCH Care has been a blessing for my family. The staff's compassion and professionalism 
-                            have made all the difference in our experience. The facility maintains the perfect balance 
-                            between medical expertise and home-like comfort."
-                        </p>
-                    </div>
-    
-                    <div class="review-content" id="review-2" style="display: none;">
-                        <div class="review-header">
-                            <img src="../static/images/def.jpg" alt="Jane Smith" class="detail-photo">
-                            <div class="review-meta-detail">
-                                <h2 class="review-title">Jane Smith</h2>
-                                <p class="review-stats">Daughter • ★★★★★ • March 12, 2024</p>
-                            </div>
-                        </div>
-                        <p class="review-content">
-                            "The care my mother receives at SSCH is exceptional. The team goes above and beyond to ensure 
-                            her comfort and happiness. We couldn't be more grateful for their support."
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <button>add review</button>
+                <a href="addrev.html" class="add-review-btn">＋ Add Review</a>
         </main>
     </body>
 </html>
